@@ -1,0 +1,16 @@
+.side-nav {
+    width: 200px;
+}
+
+.nav-list a {
+    font-size: .2rem;
+}
+
+.nav-list i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 1rem;
+    height: calc(100vh - 9rem);
+}

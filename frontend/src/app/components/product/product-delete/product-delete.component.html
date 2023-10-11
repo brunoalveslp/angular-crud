@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-title>Deletar Produto</mat-card-title>
+  <form *ngIf="product">
+    <mat-form-field>
+      <mat-label>Nome</mat-label>
+      <input [value]="product.name" matInput disabled />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Preço</mat-label>
+      <input [value]="product.price" matInput disabled />
+    </mat-form-field>
+  </form>
+  <div>
+    <button (click)="delete()" mat-raised-button color="warn">Deletar</button>
+    <button (click)="cancel()" mat-raised-button>Cancelar</button>
+  </div>
+</mat-card>
